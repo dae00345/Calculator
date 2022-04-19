@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+            <h1>SHIKIMORI CALCULATOR</h1>
+    </header>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="outputScreen">
+        <div class="calculator-buttons">
+            <button onclick= "bersihkan()" class="calc-btn isClear">Clear</button>
+            <button onclick= "del()" class="calc-btn isDel">&larr;</button>
+            <button onclick= "show('/')" class="calc-btn color">&divide;</button>
+
+            <button onclick= "show('7')" class="calc-btn">7</button>
+            <button onclick= "show('8')" class="calc-btn">8</button>
+            <button onclick= "show('9')" class="calc-btn">9</button>
+            <button onclick= "show('*')" class="calc-btn color">x</button>
+
+            <button onclick= "show('4')" class="calc-btn">4</button>
+            <button onclick= "show('5')" class="calc-btn">5</button>
+            <button onclick= "show('6')" class="calc-btn">6</button>
+            <button onclick= "show('-')" class="calc-btn color">-</button>
+
+            <button onclick= "show('1')" class="calc-btn">1</button>
+            <button onclick= "show('2')"  class="calc-btn">2</button>
+            <button onclick= "show('3')" class="calc-btn">3</button>
+            <button onclick= "show('+')" class="calc-btn color">+</button>
+
+            <button onclick= "show('0')"  class="calc-btn isZero">0</button>
+            <button onclick= "show('.')"  class="calc-btn isTitik">.</button>
+            <button onclick= "calculator()"  class="calc-btn isEquals">&equals;</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

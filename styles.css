@@ -1,0 +1,109 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    box-sizing: border-box;
+}
+.calculator{
+    width: 400px;
+    margin: 0 auto;
+    border: white solid 5px;
+    box-shadow: 5px 10px 15px white, -5px -5px 15px deeppink;
+
+}
+body{
+    background-image: url(aset/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+}
+h1{
+    text-align: center;
+    font-family: 'Rapier Zero Hollow', Lobster, sans-serif;
+    color: white;
+    font-size: 40px;
+}
+h1:hover{
+      font-family: 'Rapier Zero', Lobster, sans-serif;
+      cursor: pointer;
+}
+h1:active{
+     text-shadow: 5px 5px 2px deeppink;
+}
+.calculator input{
+    background:none;
+    border: none;
+    box-shadow:none;
+    width:100%;
+    border-bottom: solid 6px whitesmoke;
+    padding: 20px;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px deeppink;
+    outline:none;
+    font-family: Roboto, sans-serif;
+}
+.calculator-buttons{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+    background-image: url(aset/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.calc-btn{
+    background-color: pink;
+    border: 3px solid white;
+    padding: 20px;
+    color:white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 25%;
+    font-family: Roboto, sans-serif;
+}
+.calc-btn:hover{
+    animation-name: btn-anim;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    opacity: 60%;
+}
+.calc-btn:active{
+    background-color: white;
+    color: deepskyblue;
+    opacity: 100%;
+    animation-name: btn-click;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.isZero{
+    grid-column: span 2;
+}
+.isClear{
+    grid-column: span 2;
+    background-color: deepskyblue;
+}
+.isEquals{
+    background-color: deepskyblue;
+}
+.isDel{
+    background-color: deepskyblue;
+}
+.color{
+    background-color:deeppink;
+}
+@keyframes btn-anim{
+    100%{
+        transform: scale(1.05);
+    }
+}
+@keyframes btn-click{
+    100%{
+        transform: scale(0.8);
+    }
+}
