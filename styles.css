@@ -73,6 +73,7 @@ h1:active{
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
     opacity: 60%;
+    outline:none;
 }
 .calc-btn:active{
     background-color: white;
