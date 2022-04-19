@@ -66,6 +66,7 @@ h1:active{
     cursor: pointer;
     border-radius: 25%;
     font-family: Roboto, sans-serif;
+    outline:none;
 }
 .calc-btn:hover{
     animation-name: btn-anim;
